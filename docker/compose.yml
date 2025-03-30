@@ -1,0 +1,8 @@
+services:
+  customhost-s3:
+    image: customhost-s3:dev
+    container_name: customhost-s3
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    network_mode: host
